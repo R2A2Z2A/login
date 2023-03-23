@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>LOGIN FORM</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        body{
+            background: linear-gradient(rgba(0,0,0,0.4)50%,rgba(0,0,0,0.4)50%), url(./assets/images.jpg/2.jpg);
+            background-position: center;
+            background-size: cover;
+            height: 100vh;
+        }
+
+        .form{
+    width: 250px;
+    height: 330px;
+    color: #fff;
+    background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px 25px;
+    border-radius: 10px;
+
+}
+
+.form h1{
+    width: 220px;
+    text-align: center;
+    padding-left: 11px;
+    font-size: 35px;
+    color: #66ff00;
+    margin-bottom: 20px;
+}
+
+.form p{
+    padding-bottom: -15px;
+}
+
+.form input{
+    width: 100%;
+    height: 35px;
+    padding-top: 5px;
+    margin-bottom: 30px;
+    background: transparent;
+    border-bottom: 1px solid #fff;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: #fff;
+    outline: none;
+    font-size: 15px;
+    letter-spacing: 1px;
+    
+}
+.form input[type="submit"]
+{
+    width: 60%;
+    margin-left: 50px;
+    border: none;
+    height: 40px;
+    color: black;
+    background: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+.form input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: #66ff00;
+    color: #fff;
+    font-weight: bold;
+
+}
+    </style>
+
+</head>
+<body>
+    <div class="form">
+        <h1>Admin Login</h1>
+        <p>Username</p>
+        <input type="text" name=""  placeholder="Username" required>
+        <p>Password</p>
+        <input type="password" name="" id="pass" placeholder="Password" required>
+        <input type="checkbox" onclick="myfunction()">
+        <input type="submit" name="" id="" value="Login" onclick="validate()">
+    </div>
+
+    <div>
+        <p id="length"></p>
+    </div>
+
+
+    <script src="scripy11.js"></script>
+</body>
+</html>
